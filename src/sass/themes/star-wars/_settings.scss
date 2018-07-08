@@ -15,7 +15,7 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'STARWARS', Impact, sans-serif;
-$headingColor: $oc-yellow-5;
+$headingColor: $oc-blue-5;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -33,7 +33,7 @@ $linkColor: $oc-blue-6;
 $linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
-$selectionBackgroundColor: $oc-yellow-5;
+$selectionBackgroundColor: $oc-blue-5;
 $selectionColor: $oc-gray-0;
 
 // Generates the presentation background, can be overridden

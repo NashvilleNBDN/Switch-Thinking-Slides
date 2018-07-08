@@ -11,31 +11,18 @@ import fontawesome from '@fortawesome/fontawesome';
 import fontawesomeSolid from '@fortawesome/fontawesome-free-solid';
 fontawesome.library.add(fontawesomeSolid);
 
-import pageJS from './slides/000-page-js.slide';
-import pageHTML from './slides/000-page-html.slide.html';
-import pageMarkDown from './slides/000-page-md.slide.md';
-import pageIcons from './slides/000-page-icons.slide.html';
-
-// Star Wars Theme
-import swLead from './slides/100-sw-lead.slide.html';
-import swTitle from './slides/100-sw-title.slide.html';
-import swOpening from './slides/100-sw-opening.slide.html';
-import swGif from './slides/100-sw-gif.slide.html';
+import title from './slides/100-title.slide.html';
+import aboutMe from './slides/200-about-me.slide.html';
+import objectives from './slides/300-objectives.slide.html';
 
 // -------------------------------------------------------------------------
 // Slides
 // -------------------------------------------------------------------------
 
 const slides = [
-  swLead,
-  swTitle,
-  swOpening,
-  swGif,
-
-  pageJS,
-  pageHTML,
-  pageMarkDown,
-  pageIcons,
+  title,
+  aboutMe,
+  objectives,
 ]
   .forEach(s => $('#slides').append(s));
 
