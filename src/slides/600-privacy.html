@@ -15,11 +15,19 @@
   <section>
     <h2>Randomness</h2>
     <p> Blockchains are inherently deterministic.<p>
-    <h4>Most contracts may used pseudo-random variables just at blockhash<h4>
-    <h4>But miners always have final say<h4>
+    <h4>Most contracts may used pseudo-random variables such as blockhash<h4>
+        <pre>
+          <code>
+          bytes32 blockhash = block.blockhash(block.number - 1);
+          uint32 winner = uint32(blockhash) % ticketamount;
+          </code>
+        </pre>
+        <h4>But miners always have final say<h4>
 
   </section>
   <section>
     <h2>Race Conditions</h2>
+    <p>There is an inescapable time delay between the moment a blockchain transaction is broadcast to the network and the moment that that same transaction is mined into a block. During the intervening period, transactions sit in a pending transaction pool (mempool) waiting to be mined.</p>
+    - Front-running, Griefing and the Perils of Virtual Settlement (Part 1) - Will Warren (0xProject)
   </section>
 </section>

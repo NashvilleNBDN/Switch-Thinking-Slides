@@ -15,6 +15,7 @@ import title from './slides/100-title.slide.html';
 import aboutMe from './slides/200-about-me.slide.html';
 import objectives from './slides/300-objectives.slide.html';
 import blockchainOverview from './slides/400-blockchain-overview.html';
+import web30 from './slides/401-web30.html';
 import doYouNeedBlockchain from './slides/500-do-you-need-blockchain.html';
 import privacy from './slides/600-privacy.html';
 
@@ -27,6 +28,7 @@ const slides = [
   title,
   aboutMe,
   objectives,
+  web30,
   blockchainOverview,
   doYouNeedBlockchain,
   privacy
