@@ -14,6 +14,10 @@ fontawesome.library.add(fontawesomeSolid);
 import title from './slides/100-title.slide.html';
 import aboutMe from './slides/200-about-me.slide.html';
 import objectives from './slides/300-objectives.slide.html';
+import blockchainOverview from './slides/400-blockchain-overview.html';
+import doYouNeedBlockchain from './slides/500-do-you-need-blockchain.html';
+import privacy from './slides/600-privacy.html';
+
 
 // -------------------------------------------------------------------------
 // Slides
@@ -23,6 +27,9 @@ const slides = [
   title,
   aboutMe,
   objectives,
+  blockchainOverview,
+  doYouNeedBlockchain,
+  privacy
 ]
   .forEach(s => $('#slides').append(s));
 
