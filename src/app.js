@@ -18,6 +18,9 @@ import blockchainOverview from './slides/400-blockchain-overview.html';
 import web30 from './slides/401-web30.html';
 import doYouNeedBlockchain from './slides/500-do-you-need-blockchain.html';
 import privacy from './slides/600-privacy.html';
+import otherStuff from './slides/700-other-stuff.html';
+import questions from './slides/800-questions.html';
+
 
 
 // -------------------------------------------------------------------------
@@ -28,10 +31,12 @@ const slides = [
   title,
   aboutMe,
   objectives,
-  web30,
   blockchainOverview,
+  web30,
   doYouNeedBlockchain,
-  privacy
+  privacy,
+  otherStuff,
+  questions
 ]
   .forEach(s => $('#slides').append(s));
 

@@ -1,8 +1,9 @@
 pragma solidity ^0.4.24;
 
-contract RockPaperScissors {
+contract RockPaperScissorsHash {
   address public player1;
   address public player2;
+  bytes32 public decisionHash;
   mapping(address => Decision) decisions;
   address public winner;
   
@@ -13,14 +14,20 @@ contract RockPaperScissors {
     Scissors
   }
 
-  constructor(bytes32 _decision) {
+  constructor(bytes32 _hash) {
     player1 = msg.sender;
-    decisions[msg.sender] = decisionBytesToEnum(_decision);
+    decisionHash = _hash;
   }
   
   function shoot(bytes32 _decision) public {
     player2 = msg.sender;
     decisions[msg.sender] = decisionBytesToEnum(_decision);
+    winner = getWinner();
+  }
+
+  function reveal(bytes32 _decision, bytes32 _secret) public {
+    require(decisionHash == keccak256(abi.encodePacked(_decision, _secret)));
+    decisions[player1] = decisionBytesToEnum(_decision);
     winner = getWinner();
   }
 
@@ -53,5 +60,9 @@ contract RockPaperScissors {
     }
     
     return player2;
+  }
+
+  function hashValues(bytes32 _v1, bytes32 _v2) view public returns (bytes32) {
+    return keccak256(abi.encodePacked(_v1, _v2));
   }
 }

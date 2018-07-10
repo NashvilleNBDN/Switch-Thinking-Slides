@@ -1,0 +1,20 @@
+<section>
+  <section>
+    <pre><code>
+    mapping(address => uint256) balances;
+
+    function transfer(address to, uint tokens) public returns (bool success) {
+        balances[msg.sender] = balances[msg.sender]- tokens;
+        balances[to] = balances[to] + tokens;
+        Transfer(msg.sender, to, tokens);
+        return true;
+    }
+    </pre></code>
+  </section>
+  <section>
+  <h4>Overflow / Underflow</h4>
+  <ul>
+    <li> 0 - 1 = 2^256-1</li>
+  </ul>
+  </section>
+</section>
