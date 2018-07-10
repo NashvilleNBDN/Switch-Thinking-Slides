@@ -1,5 +1,11 @@
 https://nashvillenbdn.github.io/Switch-Thinking-Slides/
+
+RockPaperScissors deployed on kovan at address [0x462DC798f5230f04650AfC6086c012806a28D90A](https://kovan.etherscan.io/address/0x462dc798f5230f04650afc6086c012806a28d90a#code)
+
+
 ____________________
+
+
 
 <p align="center">
   <img src="./w3tec-logo.png" alt="w3tec" width="400" />

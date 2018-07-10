@@ -18,8 +18,8 @@
     <h4>Most contracts may used pseudo-random variables such as blockhash<h4>
         <pre>
           <code>
-          bytes32 blockhash = block.blockhash(block.number - 1);
-          uint32 winner = uint32(blockhash) % ticketamount;
+          bytes32 blockHash = blockhash(block.number - 1);
+          uint32 winner = uint32(blockHash) % numOfTickets;
           </code>
         </pre>
         <h4>But miners always have final say<h4>
