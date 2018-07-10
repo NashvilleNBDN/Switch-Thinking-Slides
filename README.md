@@ -1,3 +1,6 @@
+https://nashvillenbdn.github.io/Switch-Thinking-Slides/
+____________________
+
 <p align="center">
   <img src="./w3tec-logo.png" alt="w3tec" width="400" />
 </p>
@@ -11,18 +14,6 @@
 </p>
 
 <br />
-
-## ❯ Why
-
-Full configured [reveal.js](https://revealjs.com/) sample project with [webpack](https://webpack.js.org/) and some awesome features:
-
-### Features
-
-- **Markdown & HTML Support** Write your slides with the markdown or html language.
-- **Sass** Define your styles with [Sass](https://sass-lang.com/).
-- **Github Deployment** Run `npm start deploy` to deploy your builded presentation on th github pages.
-
-![divider](./w3tec-divider.png)
 
 ## ❯ Table of Contents
 
@@ -56,26 +47,6 @@ Go to the project dir and start your app with this npm script.
 ```bash
 npm start
 ```
-
-![divider](./w3tec-divider.png)
-
-## ❯ Scripts and Tasks
-
-All script are defined in the `package-scripts.js` file, but the most important ones are listed here.
-
-### Install
-
-- Install all dependencies with `yarn install`
-
-### Serve
-
-- Run `npm start` to serve your presentation locally
-
-### Deploy
-
-- Run `npm start deploy` to deploy your presentation on the github pages.
-
-![divider](./w3tec-divider.png)
 
 ## ❯ License
 
